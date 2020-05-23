@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color : -webkit-linear-gradient(top,#75d3ff,#fda32d, rgb(250, 89, 89));
+    --secondary-color : -webkit-repeating-linear-gradient(top,#fda32d,#75d3ff);
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+/* reset do css padrão */
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);  
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+/* estilizando o body */
+.container {
+    border-radius: 20px;
+    max-width: 640px;
+    margin: 50px auto;
+    background: var(--secondary-color);  
+    padding: 20px ;
+}
+
+/* estilizando o form */
+form input, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* estilizando os dois inputs */
+form input {
+    font-size: 18px;
+    height: 30px;
+    padding: 0 10 px;
+    border: none;
+    border-radius: 10px;
+}
+
+form input:focus {
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+/* estilizando o button*/
+form button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-attachment: #fff;
+    color: rgb(7, 4, 4);
+    font-size: 18px;
+    height: 50px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgb(236, 227, 227);
+}
+
+/* estilizando as ul */
+.content {
+    display: justify;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+/* estilizando os valores inseridos*/
+.height, .weight {
+    padding-left: 10px;
+}
+
+/* estilizando o resultado*/
+.p-result, .bad-result {
+    background: rgba(0, 231, 0, 0.589);
+    border-radius: 10px;
+}
+
+.bad-result {
+    background: rgba(255, 4, 4, 0.61);
+}
+

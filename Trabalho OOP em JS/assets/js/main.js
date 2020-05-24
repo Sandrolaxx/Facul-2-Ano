@@ -61,8 +61,6 @@ class Imc {
         const imc = weight / height ** 2;
         return imc.toFixed(2);
     }
-
-    printResult
 };
 
 //Herança
